@@ -7,7 +7,7 @@
     "local:macOS": "export APP_ENV=local&& next dev -H 0.0.0.0 -p 3001",
     "nonprod": "set APP_ENV=nonprod&& next build && next export -o out",
     "nonprod:macOS": "export APP_ENV=nonprod&& next build && next export -o out",
-    "nonprod:macOS:build": "export APP_ENV=nonprod && next build",
+    "nonprod:macOS:build": "set APP_ENV=nonprod&& next build && next export -o public",
     "prod": "set APP_ENV=prod&& next build && next export -o out",
     "prod:macOS": "export APP_ENV=prod&& next build && next export -o out",
     "start:nonprod": "set APP_ENV=nonprod&& next start",
