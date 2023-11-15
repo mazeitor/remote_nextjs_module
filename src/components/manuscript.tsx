@@ -1,6 +1,5 @@
 import * as React from "react";
 // import styles from "./manuscript.module.css";
-import "tailwindcss/tailwind.css";
 import {Submission} from "@/interfaces/Submission";
 
 interface ManuscriptProps {
