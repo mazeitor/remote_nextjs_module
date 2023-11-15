@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Any styles defined here will only apply to the tool when it is run in isolation */
+/* (i.e. not when pulled into a container application) */

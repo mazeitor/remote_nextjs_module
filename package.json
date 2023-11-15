@@ -1,0 +1,38 @@
+{
+  "name": "manuscript",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "local": "set APP_ENV=local&& next dev -H 0.0.0.0 -p 3001",
+    "local:macOS": "export APP_ENV=local&& next dev -H 0.0.0.0 -p 3001",
+    "nonprod": "set APP_ENV=nonprod&& next build && next export -o out",
+    "nonprod:macOS": "export APP_ENV=nonprod&& next build && next export -o out",
+    "nonprod:macOS:build": "export APP_ENV=nonprod && next build",
+    "prod": "set APP_ENV=prod&& next build && next export -o out",
+    "prod:macOS": "export APP_ENV=prod&& next build && next export -o out",
+    "start:nonprod": "set APP_ENV=nonprod&& next start",
+    "start:nonprod:macOS": "export APP_ENV=nonprod&& next start",
+    "start:prod": "set APP_ENV=prod&& next start",
+    "start:prod:macOS": "export APP_ENV=prod&& next start",
+    "test:local": "set APP_ENV=test&& jest --watchAll",
+    "test": "set APP_ENV=test&& jest",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@module-federation/nextjs-mf": "^7.0.8",
+    "next": "13.5.6",
+    "react": "^18",
+    "react-dom": "^18",
+    "webpack": "^5.89.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "typescript": "^5",
+    "webpack-cli": "^5.1.4"
+  }
+}
